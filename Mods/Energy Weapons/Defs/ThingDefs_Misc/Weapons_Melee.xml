@@ -12,7 +12,7 @@
     <costStuffCount>250</costStuffCount>
     <statBases>
      <WorkToMake>80000</WorkToMake>
-     <MeleeWeapon_DamageAmount>40</MeleeWeapon_DamageAmount>
+     <MeleeWeapon_DamageAmount>35</MeleeWeapon_DamageAmount>
      <MeleeWeapon_Cooldown>0.7</MeleeWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -35,4 +35,5 @@
       <meleeDamageDef>Cut</meleeDamageDef>
      </li>
    </verbs>
-</ThingDef>
+   </ThingDef>
+</ThingDefs>
