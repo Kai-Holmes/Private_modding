@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs>
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp">
+    <defName>MeleeWeapon_ESword</defName>
+    <label>Energy Sword</label>
+    <description>A futuristic sword with no physical blade.</description>
+    <graphicData>
+     <texPath>Melee/E_Sword</texPath>
+     <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractPistol</soundInteract>
+    <costStuffCount>250</costStuffCount>
+    <statBases>
+     <WorkToMake>80000</WorkToMake>
+     <MeleeWeapon_DamageAmount>40</MeleeWeapon_DamageAmount>
+     <MeleeWeapon_Cooldown>0.7</MeleeWeapon_Cooldown>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <costList>
+     <Steel>80</Steel>
+     <Plasteel>30</Plasteel>
+     <Component>3</Component>
+    </costList>
+	<techLevel>Spacer</techLevel>
+	<recipeMaker>
+     <recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+     </recipeUsers>
+    </recipeMaker>
+    <verbs>
+     <li>
+      <verbClass>Verb_MeleeAttack</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <meleeDamageDef>Cut</meleeDamageDef>
+     </li>
+   </verbs>
+</ThingDef>
