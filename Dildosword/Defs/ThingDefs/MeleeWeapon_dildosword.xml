@@ -59,29 +59,27 @@
 			<texPath>Dildosword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<techLevel>Neolithic</techLevel>
+		<techLevel>Industrial</techLevel>
 		<weaponTags>
-			<li>Neolithic</li>
-			<li>NeolithicMelee</li>
+			<li>Industrial</li>
+			<li>IndustrialMelee</li>
 		</weaponTags>
 		<costStuffCount>40</costStuffCount>
 		<statBases>
-			<WorkToMake>500</WorkToMake>
+			<WorkToMake>1500</WorkToMake>
 			<Mass>2</Mass>
 			<MeleeWeapon_DamageAmount>130</MeleeWeapon_DamageAmount>
 			<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
-		<stuffCategories>
-			<li>Metallic</li>
-			<li>Woody</li>
-			<li>Stony</li>
-		</stuffCategories>
+		<costlist>
+			<Plasteel>50</Plasteel>
+			<Steel>20</Steel>
+		</costlist>
 		<recipeMaker>
 			<recipeUsers>
 				<li>ElectricSmithy</li>
 				<li>FueledSmithy</li>
-				<li>CraftingSpot</li>
 			</recipeUsers>
 		</recipeMaker>
 		<verbs>
