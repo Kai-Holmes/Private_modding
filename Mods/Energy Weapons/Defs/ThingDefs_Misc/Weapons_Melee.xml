@@ -21,11 +21,14 @@
      <Plasteel>30</Plasteel>
      <Component>3</Component>
     </costList>
-	<techLevel>Spacer</techLevel>
 	<recipeMaker>
+	 <workSpeedStat>SmithingSpeed</workSpeedStat>
+	 <workSkill>Crafting</workSkill>
+	 <researchPrerequisite>EWeapons</researchPrerequisite>
+	 <effectWorking>Smith</effectWorking>
+	 <soundWorking>Recipe_Machining</soundWorking>
      <recipeUsers>
-      <li>ElectricSmithy</li>
-      <li>FueledSmithy</li>
+      <li>TableMachining</li>
      </recipeUsers>
     </recipeMaker>
     <verbs>

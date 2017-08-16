@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>EWeapons</defName>
+		<label>Weaponised Energy</label>
+		<description>Permits various items utilising Energy for Offence and Defence</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>10</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+</Defs>
