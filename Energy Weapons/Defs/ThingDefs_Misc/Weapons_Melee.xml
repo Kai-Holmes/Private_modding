@@ -14,12 +14,12 @@
      <WorkToMake>80000</WorkToMake>
      <MeleeWeapon_DamageAmount>35</MeleeWeapon_DamageAmount>
      <MeleeWeapon_Cooldown>0.7</MeleeWeapon_Cooldown>
+	 <Mass>1</Mass>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
     <costList>
-     <Steel>80</Steel>
      <Plasteel>30</Plasteel>
-     <Component>3</Component>
+     <Component>7</Component>
     </costList>
 	<recipeMaker>
 	 <workSpeedStat>SmithingSpeed</workSpeedStat>

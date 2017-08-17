@@ -1,0 +1,230 @@
+<ThingDefs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_ERBullet</defName>
+		<label>Energy Rifle Bullet</label>
+		<graphicData>
+			<texPath>Bullets/E_RBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_ERifle</defName>
+		<label>Energy Rifle</label>
+		<description>A futuristic Rifle designed to fire short bursts of energy in the visible green wavelength.</description>
+		<graphicData>
+			<texPath>Ranged/E_Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>80000</WorkToMake>
+			<Mass>3</Mass>
+			<AccuracyTouch>0.6</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.5</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+		 <workSpeedStat>SmithingSpeed</workSpeedStat>
+		 <workSkill>Crafting</workSkill>
+		 <researchPrerequisite>EWeapons</researchPrerequisite>
+		 <effectWorking>Smith</effectWorking>
+		 <soundWorking>Recipe_Machining</soundWorking>
+		 <recipeUsers>
+          <li>TableMachining</li>
+         </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<Component>3</Component>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_ERBullet</projectileDef>
+				<warmupTime>1.0</warmupTime>
+				<range>40</range>
+				<soundCast>ShotChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+			</li>
+		</verbs>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_EPBullet</defName>
+		<label>Energy Pistol Bullet</label>
+		<graphicData>
+			<texPath>Bullets/E_PBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageAmountBase>50</damageAmountBase>
+			<speed>100</speed>
+			<damageDef>EMP</damageDef>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+	
+		<defName>Gun_EPistol</defName>
+		<label>Energy Pistol</label>
+		<description>A futuristic Pistol designed to fire a small bubble in the visible green wavelength, effective against electronics.</description>
+		<graphicData>
+			<texPath>Ranged/E_Pistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>1</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.5</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+		 <workSpeedStat>SmithingSpeed</workSpeedStat>
+		 <workSkill>Crafting</workSkill>
+		 <researchPrerequisite>EWeapons</researchPrerequisite>
+		 <effectWorking>Smith</effectWorking>
+		 <soundWorking>Recipe_Machining</soundWorking>
+		 <recipeUsers>
+          <li>TableMachining</li>
+         </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<Component>7</Component>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_EPBullet</projectileDef>
+				<warmupTime>1.0</warmupTime>
+				<range>20</range>
+				<soundCast>ShotChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+			</li>
+		</verbs>
+	</ThingDef>
+    <ThingDef ParentName="BaseBullet">
+		<defName>Bullet_USBullet</defName>
+		<label>Sniper Rifle Bullet</label>
+		<graphicData>
+			<texPath>Bullets/U_SBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+			<speed>150</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_USRifle</defName>
+		<label>Sniper Rifle</label>
+		<description>A Rifle designed to fire large calibers at speeds Richard Hammond would envy.</description>
+		<graphicData>
+			<texPath>Ranged/U_SRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>5</Mass>
+			<AccuracyTouch>0.1</AccuracyTouch>
+			<AccuracyShort>7</AccuracyShort>
+			<AccuracyMedium>1</AccuracyMedium>
+			<AccuracyLong>1</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+		 <workSpeedStat>SmithingSpeed</workSpeedStat>
+		 <workSkill>Crafting</workSkill>
+		 <researchPrerequisite>EWeapons</researchPrerequisite>
+		 <effectWorking>Smith</effectWorking>
+		 <soundWorking>Recipe_Machining</soundWorking>
+		 <recipeUsers>
+          <li>TableMachining</li>
+         </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>250</Plasteel>
+			<Component>2</Component>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_USBullet</projectileDef>
+				<warmupTime>1.0</warmupTime>
+				<range>70</range>
+				<soundCast>ShotChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+			</li>
+		</verbs>
+	</ThingDef>
+    <ThingDef ParentName="BaseBullet">
+		<defName>Bullet_UPBullet</defName>
+		<label>Pistol Bullet</label>
+		<graphicData>
+			<texPath>Bullets/U_PBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_UPistol</defName>
+		<label>Pistol</label>
+		<description>A Pistol designed to fire small shots, not a heavy hitter but better than nothing.</description>
+		<graphicData>
+			<texPath>Ranged/U_Pistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>3</Mass>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.9</AccuracyShort>
+			<AccuracyMedium>0.5</AccuracyMedium>
+			<AccuracyLong>0.5</AccuracyLong>
+		</statBases>
+		<recipeMaker>
+		 <workSpeedStat>SmithingSpeed</workSpeedStat>
+		 <workSkill>Crafting</workSkill>
+		 <researchPrerequisite>EWeapons</researchPrerequisite>
+		 <effectWorking>Smith</effectWorking>
+		 <soundWorking>Recipe_Machining</soundWorking>
+		 <recipeUsers>
+          <li>TableMachining</li>
+         </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>60</Plasteel>
+			<Component>1</Component>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_UPBullet</projectileDef>
+				<warmupTime>1.0</warmupTime>
+				<range>30</range>
+				<soundCast>ShotChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+			</li>
+		</verbs>
+	</ThingDef>
+</ThingDefs>
