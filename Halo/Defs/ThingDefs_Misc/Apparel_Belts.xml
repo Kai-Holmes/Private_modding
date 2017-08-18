@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_ShieldBelt</defName>
+		<label>Energy Shield</label>
+    <description>A Covenant Energy Shield, able to block projectiles but hard to wield in close quarters and impossible to shoot with. </description>
+		<thingClass>ShieldBelt</thingClass>
+		<graphicData>
+      <texPath>Defence/E_Shield</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <Mass>3</Mass>
+      <EnergyShieldRechargeRate>0.02</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>2</EnergyShieldEnergyMax>
+			<WorkToMake>90000</WorkToMake>
+    </statBases>
+		<costList>
+			<Component>5</Component>
+			<Plasteel>50</Plasteel>
+		</costList>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+</Defs>

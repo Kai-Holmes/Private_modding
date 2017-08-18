@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BodyPartDefs>
+  <BodyPartDef>
+    <defName>Mandible</defName>
+    <label>Mandible</label>
+    <hitPoints>2</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <oldInjuryBaseChance>0</oldInjuryBaseChance>
+    <skinCovered>false</skinCovered>
+    <isSolid>true</isSolid>
+    <beautyRelated>true</beautyRelated>
+  </BodyPartDef>
+</BodyPartDefs>
