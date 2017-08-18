@@ -1,4 +1,14 @@
 <ThingDefs>
+    <ThingDef Name="BaseEliteGun" ParentName="BaseGun" Abstract="True">
+      <weaponTags>
+        <li>Elite</li>
+      </weaponTags>
+    </ThingDef>
+	<ThingDef Name="BaseGruntGun" ParentName="BaseGun" Abstract="True">
+      <weaponTags>
+        <li>Grunt</li>
+      </weaponTags>
+    </ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>Bullet_CRBullet</defName>
 		<label>Energy Rifle Bullet</label>
@@ -12,7 +22,7 @@
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseEliteGun">
 		<defName>Gun_CRifle</defName>
 		<label>Covenant Carbine</label>
 		<description>A Covenant Carbine designed to fire radioactive projectiles.</description>
@@ -22,7 +32,6 @@
 		</graphicData>
 		<soundInteract>InteractChargeRifle</soundInteract>
 		<statBases>
-			<WorkToMake>80000</WorkToMake>
 			<Mass>3</Mass>
 			<AccuracyTouch>0.6</AccuracyTouch>
 			<AccuracyShort>0.9</AccuracyShort>
@@ -30,15 +39,6 @@
 			<AccuracyLong>0.5</AccuracyLong>
 			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 		</statBases>
-		<recipeMaker>
-		 <workSpeedStat>SmithingSpeed</workSpeedStat>
-		 <workSkill>Crafting</workSkill>
-		 <effectWorking>Smith</effectWorking>
-		 <soundWorking>Recipe_Machining</soundWorking>
-		 <recipeUsers>
-          <li>TableMachining</li>
-         </recipeUsers>
-		</recipeMaker>
 		<costList>
 			<Plasteel>100</Plasteel>
 			<Component>3</Component>
@@ -68,7 +68,7 @@
 			<damageDef>EMP</damageDef>
 		</projectile>
 	</ThingDef>
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseGruntGun">
 	
 		<defName>Gun_CPistol</defName>
 		<label>Plasma Pistol</label>
@@ -79,7 +79,6 @@
 		</graphicData>
 		<soundInteract>InteractChargeRifle</soundInteract>
 		<statBases>
-			<WorkToMake>30000</WorkToMake>
 			<Mass>1</Mass>
 			<AccuracyTouch>1</AccuracyTouch>
 			<AccuracyShort>0.9</AccuracyShort>
@@ -87,15 +86,6 @@
 			<AccuracyLong>0.5</AccuracyLong>
 			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
 		</statBases>
-		<recipeMaker>
-		 <workSpeedStat>SmithingSpeed</workSpeedStat>
-		 <workSkill>Crafting</workSkill>
-		 <effectWorking>Smith</effectWorking>
-		 <soundWorking>Recipe_Machining</soundWorking>
-		 <recipeUsers>
-          <li>TableMachining</li>
-         </recipeUsers>
-		</recipeMaker>
 		<costList>
 			<Plasteel>50</Plasteel>
 			<Component>7</Component>

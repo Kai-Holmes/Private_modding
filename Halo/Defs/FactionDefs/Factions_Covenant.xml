@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef Abstract="True" Name="SpacerBase">
+		<label>Covenant</label>
+		<description>A religous faction on a quest to erradicate Humanity.</description>
+		<pawnsPlural>troops</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<raidCommonality>1000</raidCommonality>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+		<fixedName>Covenant</fixedName>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategory>Military</backstoryCategory>
+		<hidden>false</hidden>
+		<rescueesCanJoin>false</rescueesCanJoin>
+		<autoFlee>false</autoFlee>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>Hyperweave</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+	<FactionDef ParentName="SpacerBase">
+		<defName>Covenant</defName>
+    </FactionDef>
+
+  <FactionDef ParentName="SpacerBase">
+    <defName>Covenant</defName>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+  </FactionDef>
+</Defs>

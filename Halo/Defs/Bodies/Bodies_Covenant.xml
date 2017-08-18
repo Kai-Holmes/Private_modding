@@ -3,7 +3,7 @@
 
 
   <BodyDef>
-    <defName>Elite</defName>
+    <defName>Sangheili</defName>
     <label>Sangheili</label>
     <corePart>
       <def>Torso</def>
