@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp">
     <defName>MeleeWeapon_ESword</defName>
     <label>Energy Sword</label>
-    <description>A futuristic sword with no physical blade.</description>
+    <description>A Covenant Sword with a plasma blade.</description>
     <graphicData>
      <texPath>Melee/E_Sword</texPath>
      <graphicClass>Graphic_Single</graphicClass>
@@ -24,7 +24,6 @@
 	<recipeMaker>
 	 <workSpeedStat>SmithingSpeed</workSpeedStat>
 	 <workSkill>Crafting</workSkill>
-	 <researchPrerequisite>EWeapons</researchPrerequisite>
 	 <effectWorking>Smith</effectWorking>
 	 <soundWorking>Recipe_Machining</soundWorking>
      <recipeUsers>

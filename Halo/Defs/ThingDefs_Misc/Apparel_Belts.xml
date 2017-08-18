@@ -3,7 +3,7 @@
   <ThingDef ParentName="ApparelBase">
     <defName>Apparel_ShieldBelt</defName>
 		<label>Energy Shield</label>
-    <description>A futuristic Energy Shield, able to block projectiles but hard to wield in close quarters and impossible to shoot with. </description>
+    <description>A Covenant Energy Shield, able to block projectiles but hard to wield in close quarters and impossible to shoot with. </description>
 		<thingClass>ShieldBelt</thingClass>
 		<graphicData>
       <texPath>Defence/E_Shield</texPath>
@@ -22,7 +22,6 @@
 		</costList>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
-			<researchPrerequisite>EWeapons</researchPrerequisite>
 			<workSpeedStat>SmithingSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
