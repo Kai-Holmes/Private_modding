@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef Abstract="True" Name="SpacerBase">
+	<FactionDef Abstract="True" Name="CovenantFaction">
 		<label>Covenant</label>
+		<defName>Covenant</defName>
 		<description>A religous faction on a quest to erradicate Humanity.</description>
 		<pawnsPlural>troops</pawnsPlural>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -22,21 +23,13 @@
 				<li>Hyperweave</li>
 			</thingDefs>
 		</apparelStuffFilter>
+        <startingGoodwill>
+            <min>-100</min>
+            <max>-100</max>
+        </startingGoodwill>
+        <naturalColonyGoodwill>
+            <min>-100</min>
+            <max>-100</max>
+        </naturalColonyGoodwill>
 	</FactionDef>
-
-	<FactionDef ParentName="SpacerBase">
-		<defName>Covenant</defName>
-    </FactionDef>
-
-  <FactionDef ParentName="SpacerBase">
-    <defName>Covenant</defName>
-    <startingGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </startingGoodwill>
-    <naturalColonyGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </naturalColonyGoodwill>
-  </FactionDef>
 </Defs>

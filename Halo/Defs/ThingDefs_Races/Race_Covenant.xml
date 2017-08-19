@@ -3,6 +3,10 @@
   <ThingDef ParentName="BasePawn">
     <defName>Sangheili</defName>
     <label>Sangheili</label>
+	<category>Pawn</category>
+	<selectable>true</selectable>
+	<tickerType>Normal</tickerType>
+	<altitudeLayer>Pawn</altitudeLayer>
     <description>A Sangheili, one of the original races of the Covenant and their military backbone.</description>
     <statBases>
       <MoveSpeed>5</MoveSpeed>
@@ -40,10 +44,6 @@
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>80</lifeExpectancy>
-      <leatherColor>(211,194,143)</leatherColor>
-      <leatherCommonalityFactor>0.01</leatherCommonalityFactor>
-      <leatherInsulation>0.70</leatherInsulation>
-      <leatherMarketValueFactor>2</leatherMarketValueFactor>
       <nameCategory>HumanStandard</nameCategory>
       <body>Sangheili</body>
       <baseBodySize>1</baseBodySize>

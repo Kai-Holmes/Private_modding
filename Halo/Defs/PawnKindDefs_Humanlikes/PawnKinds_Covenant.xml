@@ -1,82 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <PawnKindDefs>
   <PawnKindDef Abstract="True" Name="Covenant">
-    <race>Sangheili</race>
-    <combatPower>30</combatPower>
-    <baseRecruitDifficulty>0.60</baseRecruitDifficulty>
-    <isFighter>false</isFighter>
-    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-    <forceNormalGearQuality>true</forceNormalGearQuality>
+
   </PawnKindDef>
   <PawnKindDef ParentName="Covenant">
     <defName>Sangheili</defName>
     <label>Sangheili</label>
-    <defaultFactionType>Covenant</defaultFactionType>
+	<race>Sangheili</race>
+    <baseRecruitDifficulty>0.99</baseRecruitDifficulty>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <defaultFactionType>PlayerColony</defaultFactionType>
     <backstoryCategory>Military</backstoryCategory>
+	<combatPower>90</combatPower>
+	<lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Sangheili/Sangheili</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+		  <drawSize>(1.7,1.7)</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
     <apparelTags>
-      <li>Spacer</li>
+      <li>Elite</li>
     </apparelTags>
-    <apparelMoney>
-      <min>1000</min>
-      <max>2400</max>
-    </apparelMoney>
-    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-  </PawnKindDef>
-  <PawnKindDef ParentName="MercenaryBase">
-    <defName>MercenaryGunner</defName>
-    <label>mercenary gunner</label>
-    <combatPower>90</combatPower>
-    <gearHealthRange>
-      <min>0.7</min>
-      <max>2.3</max>
-    </gearHealthRange>
-    <apparelTags>
-      <li>Outlander</li>
-      <li>Military</li>
-      <li>BeltDefensePop</li>
-    </apparelTags>
-    <apparelMoney>
-      <min>1500</min>
-      <max>2800</max>
-    </apparelMoney>
-    <apparelAllowHeadwearChance>0.5</apparelAllowHeadwearChance>
-    <weaponMoney>
-      <min>400</min>
-      <max>900</max>
-    </weaponMoney>
-    <weaponTags>
-      <li>Gun</li>
+	<weaponTags>
+      <li>Elite</li>
     </weaponTags>
-    <techHediffsMoney>
-      <min>1000</min>
-      <max>1500</max>
-    </techHediffsMoney>
-    <combatEnhancingDrugsCount>
-      <min>0</min>
-      <max>2</max>
-    </combatEnhancingDrugsCount>
-    <techHediffsTags>
-      <li>Advanced</li>
-    </techHediffsTags>
-    <techHediffsChance>0.003</techHediffsChance>
-    <inventoryOptions>
-      <skipChance>0.8</skipChance>
-      <subOptionsChooseOne>
-        <li>
-          <thingDef>Silver</thingDef>
-          <countRange>
-            <min>50</min>
-            <max>200</max>
-          </countRange>
-        </li>
-        <li>
-          <thingDef>Medicine</thingDef>
-          <countRange>
-            <min>1</min>
-            <max>1</max>
-          </countRange>
-        </li>
-      </subOptionsChooseOne>
-    </inventoryOptions>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
 </PawnKindDefs>
